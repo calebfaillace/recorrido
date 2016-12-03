@@ -1,0 +1,30 @@
+
+<h1>Proyectos</h1>
+
+	<%= image_tag  @proyecto.image_url %>
+	<h1><%=  @proyecto.nombre %></h1>
+	<p><%=  @proyecto.tipo_inmueble %></p>
+	<p><%=  @proyecto.ciudad %></p>
+	<p><%=  @proyecto.direccion %></p>
+	<p><%=  @proyecto.area_privada %></p>
+	<p><%=  @proyecto.area_construida %></p>
+	<p><%=  @proyecto.precio %></p>
+	<p><%=  @proyecto.contacto %></p>
+
+	<h1>Caracteristicas Interiores</h1>
+		<ul>
+			<% @interiors.each do |f| %>
+				<li><%= f.caracteristica_interior %></li>
+			<% end -%>
+		</ul>
+
+	<h1>Caracteristicas Exteriores</h1>
+		<ul>
+			<% @exteriors.each do |f| %>
+				<li><%= f.caracteristica_exterior %></li>
+			<% end -%>
+		</ul>
+	<h1>Recorrido Virtual</h1>
+
+	<%= link_to "Ver recorrido", controller: "home", action: "show_recorrido", id: @proyecto %>
+

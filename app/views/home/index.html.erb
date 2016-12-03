@@ -1,0 +1,12 @@
+<h1>Bienvenido</h1>
+<% @constructora.each do |f| %>
+	<%= image_tag f.logo_url %>
+	<p>Nombre: <%= f.nombre %></p>
+	<p>Descripcion: <%= f.descripcion %></p>
+	<p>Correo: <%= f.correo %></p>
+	<p>Direccion: <%= f.direccion %></p>
+	<p>Telefono: <%= f.telefono %> </p>
+	
+
+	<%= link_to "Ver proyectos", controller: "home", action: "show", id: f %>
+<% end %>

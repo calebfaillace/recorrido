@@ -1,0 +1,14 @@
+development:
+  app_key: "1jtpawzzdvs2jqp"
+  app_secret: "9e0sf1y8epcy92d"
+  access_type: "app_folder"
+  access_token: "vdcl03528ih5iub1"
+  access_token_secret: "ak53zhn8uflxbi5"
+  user_id: "127884459"
+production:
+  app_key: "1jtpawzzdvs2jqp"
+  app_secret: "9e0sf1y8epcy92d"
+  access_type: "app_folder"
+  access_token: "vdcl03528ih5iub1"
+  access_token_secret: "ak53zhn8uflxbi5"
+  user_id: "127884459"

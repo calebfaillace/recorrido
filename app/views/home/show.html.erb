@@ -1,0 +1,9 @@
+<h1>Proyectos</h1>
+
+<% @proyectos.each do |f| %>
+	<%= image_tag f.image_url %>
+	<h1><%= f.nombre %></h1>
+	<p><%= f.ciudad %></p>
+	
+	<%= link_to "Ver proyecto", controller: "home", action: "show_all", id: f %>
+<% end -%>
