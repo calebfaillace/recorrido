@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root :to => "home#index"
+  get 'index' => "home#index"
   get 'show/:id' => "home#show"
   get 'show_all/:id' => "home#show_all"
   get 'show_json/:id' => "home#show_json"
