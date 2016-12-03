@@ -5,8 +5,11 @@ class CreatePersonalizations < ActiveRecord::Migration
     	t.string   "pos_x"
     	t.string   "pos_y"
     	t.string "objeto_file_name"
-      	t.attachment "objeto"
-      	t.integer "objeto_file_size"
+      t.attachment "objeto"
+      t.integer "objeto_file_size"
+      
+      
+      
       t.timestamps null: false
     end
   end
